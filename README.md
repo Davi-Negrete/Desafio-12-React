@@ -1,4 +1,4 @@
-# Desafío-12-Mini Aplicación de Usuarios
+# Desafío-12-React-Mini Aplicación de Usuarios
 
 ## Luis David Negrete Otero
 
