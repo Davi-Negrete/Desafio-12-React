@@ -6,7 +6,8 @@ const Formulario = ({agregarUsuario, usuarioAEditar, setUsuarioAEditar, editarUs
         id: null, 
         nombre: '', 
         apellido: '', 
-        edad: ''
+        edad: '',
+        colorFavorito: ''
     }
 
     useEffect(() => {
@@ -28,7 +29,7 @@ const Formulario = ({agregarUsuario, usuarioAEditar, setUsuarioAEditar, editarUs
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (form.nombre && form.apellido && form.edad) { // Verificar si los campos del formulario no están vacíos y no me renderice en la tabla de usuarios nuevas filas con info vacia.
+        if (form.nombre && form.apellido && form.edad && form.colorFavorito) { // Verificar si los campos del formulario no están vacíos y no me renderice en la tabla de usuarios nuevas filas con info vacia.
           if (form.id == null) {
             agregarUsuario(form)
           } else {
@@ -84,6 +85,19 @@ const Formulario = ({agregarUsuario, usuarioAEditar, setUsuarioAEditar, editarUs
                     name="edad" 
                     placeholder="Ingrese su edad"
                     value={form.edad}
+                    onChange={handleChange}
+                />
+            </div>
+            <div className="mb-3">
+                {/*Color Favorito*/}
+                <label htmlFor="lbl-colorFavorito" className="form-label">Color Favorito</label>
+                <input 
+                    type="text" 
+                    className="form-control" 
+                    id="lbl-colorFavorito" 
+                    name="colorFavorito" 
+                    placeholder="Ingrese su color favorito"
+                    value={form.colorFavorito}
                     onChange={handleChange}
                 />
             </div>

@@ -58,6 +58,7 @@ const TablaFila = ({user, eliminarUsuario, setUsuarioAEditar}) => {
         <td scope="row">{user.nombre}</td>
         <td>{user.apellido}</td>
         <td>{user.edad}</td>
+        <td>{user.colorFavorito}</td>
         <td>
             <button className="btn btn-warning me-2" onClick={() => handleEditar(user)}>Editar</button> 
             <button className="btn btn-danger" onClick={handleEliminar}>Eliminar</button>

@@ -12,7 +12,7 @@ const InicioApp = () => {
   const [usuarioAEditar, setUsuarioAEditar] = useState(null)
 
   const agregarUsuario = (usuario) => {
-    if (usuario.nombre && usuario.apellido && usuario.edad) { // Antes de crear un nuevo Usuario, verifico si los campos del usuario no están vacíos
+    if (usuario.nombre && usuario.apellido && usuario.edad && usuario.colorFavorito) { // Antes de crear un nuevo Usuario, verifico si los campos del usuario no están vacíos
       usuario.id = uuidv4()
       const nuevoEstadoUsuarios = [...users, usuario]
       setUsers(nuevoEstadoUsuarios)

@@ -12,6 +12,7 @@ const Tabla = ({users, eliminarUsuario, setUsuarioAEditar}) => {
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>Edad</th>
+                    <th>Color Favorito</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
